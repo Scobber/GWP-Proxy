@@ -34,5 +34,5 @@ def decodeTTN(packet):
         ptype = "UNCLASS", packval
     #gatewayeui = ''.join('{:02x}'.format(x) for x in packet[4:12])
     
-    #json=packet[12:].decode('utf-8')
+    json=packet[12:].decode('utf-8')
     return version, identifier, ptype,  gatewayeui, json
